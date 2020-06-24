@@ -31,6 +31,42 @@ $(document).ready(
       console.log(studente[chiave]);
     };
 
+    /////// 2
+    var classe = [
+      {
+        'nome':'Nicolò',
+        'cognome':'Paganelli',
+        'eta':29
+      },
+      {
+        'nome':'Sara',
+        'cognome':'Moretti',
+        'eta':24
+      },
+      {
+        'nome':'Lorenzo',
+        'cognome':'Zammarchi',
+        'eta':29
+      },
+      {
+        'nome':'Samuele',
+        'cognome':'Astolfi',
+        'eta':29
+      },
+      {
+        'nome':'Alessandro',
+        'cognome':'D\'Antonio',
+        'eta':29
+      },
+    ];
+    // console.log(classe);
 
+    for (var i = 0; i < classe.length; i++) {
+      // console.log(classe[i]);
+      // console.log(classe[i].nome);
+      // console.log(classe[i].cognome);
+      console.log('studente_' + (i+1) + ' Nome: ' + classe[i]['nome']);
+      console.log('           Cognome: ' + classe[i]['cognome']);
+    }
   }
 );
