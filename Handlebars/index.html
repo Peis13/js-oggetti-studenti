@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+  </head>
+  <body>
+
+    <div class="classe">
+      <h1>Classe</h1>
+    </div>
+
+    <div class="input">
+      <h2>Unisciti alla classe</h2>
+      <label>Nome:</label>
+      <input class="nome" type="text">
+
+      <label>Cognome:</label>
+      <input class="cognome" type="text">
+
+      <label>Età:</label>
+      <input class="eta" type="number">
+
+      <button type="button" class="aggiungi">AGGIUNGI</button>
+    </div>
+
+    <!-- link javascript -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="studente">
+        <p>{{ nome }}</p>
+        <p>{{ cognome }}</p>
+      </div>
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
