@@ -68,5 +68,25 @@ $(document).ready(
       console.log('studente_' + (i+1) + ' Nome: ' + classe[i]['nome']);
       console.log('           Cognome: ' + classe[i]['cognome']);
     }
+
+    /////// 3
+    var nome = prompt('Come ti chiami?');
+    var cognome = prompt('Qual\'è il tuo cognome?');
+    var eta = parseInt(prompt('Quanti anni hai?'));
+
+    var nuovoStudente = {
+      'nome': nome,
+      'cognome': cognome,
+      'eta': eta
+    }
+    
+    classe.push(nuovoStudente);
+    console.log('Classe aggiornata');
+
+    for (var i = 0; i < classe.length; i++) {
+      console.log('studente_' + (i+1) + ' Nome: ' + classe[i]['nome']);
+      console.log('           Cognome: ' + classe[i]['cognome']);
+    }
+
   }
 );
